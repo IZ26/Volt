@@ -14,7 +14,7 @@ class Button: UIButton {
     var float: CGFloat = 10
 
     enum Style{
-        case green, black, white, backgroundNone
+        case green, black, white,bordered, backgroundNone
     }
     
     var style: Style = .white{
@@ -43,6 +43,13 @@ class Button: UIButton {
                 layer.cornerRadius = 20
                 layer.borderWidth = 1
                 layer.borderColor = UIColor.greenLemon.cgColor
+        case .bordered:
+            backgroundColor = .clear
+            tintColor = UIColor.declineBlack
+            layer.cornerRadius = 20
+            layer.borderWidth = 1
+            layer.borderColor = UIColor.greenLemon.cgColor
         }
     }
 }
+

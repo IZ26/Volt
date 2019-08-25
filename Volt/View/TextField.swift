@@ -14,7 +14,7 @@ class TextField: UITextField{
     let padding = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
     
     enum Style{
-        case standard
+        case standard, bordered
     }
     
     var style: Style = .standard{
@@ -36,10 +36,18 @@ class TextField: UITextField{
     }
     
     private func setStyle(_ style: Style){
+        
+        
+        
         switch style {
         case .standard:
             layer.cornerRadius = 20
             layer.masksToBounds = true
+        case .bordered:
+            layer.cornerRadius = 20
+            layer.masksToBounds = false
+            layer.borderWidth = 0.25
+            layer.borderColor = UIColor.declineBlack.cgColor
         }
     }
 }

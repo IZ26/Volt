@@ -30,8 +30,12 @@ extension UIFont {
     }
     
     // Font --> Lato-Regular
-    public class var currentText: UIFont{
+    public class var textSmall: UIFont{
         return customFont(name: "Lato-Regular", size: 12)
+    }
+    
+    public class var textMedium: UIFont{
+        return customFont(name: "Lato-Regular", size: 15)
     }
 }
 

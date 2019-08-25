@@ -39,43 +39,37 @@ class RegisterVC: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
 extension RegisterVC{
     func setStyle(){
+        
+        let attributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.declineBlack,
+            NSAttributedString.Key.font : UIFont.textSmall
+        ]
+        
         registerTitle.textColor = UIColor.white
         registerTitle.font = UIFont.title
         registerTitle.text = "Inscription"
         
-        registerUsername.placeholder = "Username"
+        registerUsername.attributedPlaceholder = NSAttributedString(string: "Username", attributes:attributes)
         registerUsername.style = .standard
         
-        registerMail.placeholder = "Email"
+        registerMail.attributedPlaceholder = NSAttributedString(string: "Email", attributes:attributes)
         registerMail.style = .standard
         
-        registerPassword.placeholder = "Mot de passe"
+        registerPassword.attributedPlaceholder = NSAttributedString(string: "Mot de passe", attributes:attributes)
         registerPassword.style = .standard
         
-        registerConfirmPassword.placeholder = "Confirmer le mot de passe"
+        registerConfirmPassword.attributedPlaceholder = NSAttributedString(string: "Confirmer le mot de passe", attributes:attributes)
         registerConfirmPassword.style = .standard
         
         registerCGUButton.layer.cornerRadius = 7.5
         
         registerCGU.textColor = UIColor.white
-        registerCGU.font = UIFont.currentText
+        registerCGU.font = UIFont.textSmall
         registerCGU.text = "Accepter les conditions générales d'utilisations"
         
         

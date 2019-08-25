@@ -29,29 +29,35 @@ class LoginVC: UIViewController {
     
     
     
-    func getAllFont(){
-        for family: String in UIFont.familyNames
-        {
-            print(family)
-            for names: String in UIFont.fontNames(forFamilyName: family)
-            {
-                print("== \(names)")
-            }
-        }
-    }
+//    func getAllFont(){
+//        for family: String in UIFont.familyNames
+//        {
+//            print(family)
+//            for names: String in UIFont.fontNames(forFamilyName: family)
+//            {
+//                print("== \(names)")
+//            }
+//        }
+//    }
 
 }
 
 extension LoginVC{
     func setStyle(){
+        
+        let attributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.declineBlack,
+            NSAttributedString.Key.font : UIFont.textSmall
+        ]
+        
         loginTitle.textColor = UIColor.white
         loginTitle.font = UIFont.title
         loginTitle.text = "Connexion"
         
-        loginUsername.placeholder = "Username"
+        loginUsername.attributedPlaceholder = NSAttributedString(string: "Username", attributes:attributes)
         loginUsername.style = .standard
         
-        loginPassword.placeholder = "Mot de passe"
+        loginPassword.attributedPlaceholder = NSAttributedString(string: "Mot de passe", attributes:attributes)
         loginPassword.style = .standard
         
         loginButton.style = .green
