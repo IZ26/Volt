@@ -16,21 +16,22 @@ extension UIFont {
         let font = UIFont(name: name, size: size)
         return font!
     }
-    
-    // Font --> Poppins-Regular
-    public class var placeholder: UIFont {
-        return customFont(name: "Poppins-Regular", size: 12)
-    }
+
     
     // Font --> ProximaNova-Semibold
-    public class var titleFont: UIFont {
-        return customFont(name: "ProximaNova-Semibold", size: 36)
+    public class var title: UIFont {
+        return customFont(name: "ProximaNova-Semibold", size: 30)
     }
-    public class var buttonFont: UIFont {
+    public class var button: UIFont {
         return customFont(name: "ProximaNova-Semibold", size: 14)
     }
+    public class var current: UIFont{
+        return customFont(name: "ProximaNova-Semibold", size: 16)
+    }
     
-    
-    // Font --> ProximaNova-Bold
+    // Font --> Lato-Regular
+    public class var currentText: UIFont{
+        return customFont(name: "Lato-Regular", size: 12)
+    }
 }
 

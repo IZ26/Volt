@@ -9,17 +9,19 @@
 /* Begin PBXBuildFile section */
 		922EA8CD22BCB61500D34AEB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922EA8CC22BCB61500D34AEB /* Color.swift */; };
 		922EA8CF22BCB62700D34AEB /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922EA8CE22BCB62700D34AEB /* Font.swift */; };
-		922EA8E222BCDAEB00D34AEB /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 922EA8E122BCDAEB00D34AEB /* Poppins-Regular.otf */; };
 		922EA8E422BCDF4900D34AEB /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 922EA8E322BCDF4900D34AEB /* ProximaNova-Semibold.otf */; };
 		92A8DD9422BCEB3D002115DD /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8DD9322BCEB3D002115DD /* TextField.swift */; };
 		92A8DD9622BCECCC002115DD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8DD9522BCECCC002115DD /* Button.swift */; };
 		92C4DDDD22BBCF5600F75CF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C4DDDC22BBCF5600F75CF4 /* AppDelegate.swift */; };
-		92C4DDDF22BBCF5600F75CF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C4DDDE22BBCF5600F75CF4 /* ViewController.swift */; };
 		92C4DDE222BBCF5600F75CF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C4DDE022BBCF5600F75CF4 /* Main.storyboard */; };
 		92C4DDE522BBCF5600F75CF4 /* Volt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92C4DDE322BBCF5600F75CF4 /* Volt.xcdatamodeld */; };
 		92C4DDE722BBCF5700F75CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C4DDE622BBCF5700F75CF4 /* Assets.xcassets */; };
 		92C4DDEA22BBCF5700F75CF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C4DDE822BBCF5700F75CF4 /* LaunchScreen.storyboard */; };
 		92C4DDF522BBCF5800F75CF4 /* VoltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C4DDF422BBCF5800F75CF4 /* VoltTests.swift */; };
+		92EA51832312A1DF004E6B35 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA51822312A1DF004E6B35 /* LoginVC.swift */; };
+		92EA51852312A1FC004E6B35 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA51842312A1FC004E6B35 /* RegisterVC.swift */; };
+		92EA51892312C37E004E6B35 /* ProximaNova Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92EA51882312C37E004E6B35 /* ProximaNova Regular.otf */; };
+		92EA518B2312C482004E6B35 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92EA518A2312C482004E6B35 /* Lato-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +37,11 @@
 /* Begin PBXFileReference section */
 		922EA8CC22BCB61500D34AEB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		922EA8CE22BCB62700D34AEB /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
-		922EA8E122BCDAEB00D34AEB /* Poppins-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.otf"; sourceTree = "<group>"; };
 		922EA8E322BCDF4900D34AEB /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
 		92A8DD9322BCEB3D002115DD /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		92A8DD9522BCECCC002115DD /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		92C4DDD922BBCF5600F75CF4 /* Volt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Volt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C4DDDC22BBCF5600F75CF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92C4DDDE22BBCF5600F75CF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92C4DDE122BBCF5600F75CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92C4DDE422BBCF5600F75CF4 /* Volt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Volt.xcdatamodel; sourceTree = "<group>"; };
 		92C4DDE622BBCF5700F75CF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +50,10 @@
 		92C4DDF022BBCF5800F75CF4 /* VoltTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C4DDF422BBCF5800F75CF4 /* VoltTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltTests.swift; sourceTree = "<group>"; };
 		92C4DDF622BBCF5800F75CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92EA51822312A1DF004E6B35 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		92EA51842312A1FC004E6B35 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		92EA51882312C37E004E6B35 /* ProximaNova Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova Regular.otf"; sourceTree = "<group>"; };
+		92EA518A2312C482004E6B35 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				92C4DDE622BBCF5700F75CF4 /* Assets.xcassets */,
-				922EA8E122BCDAEB00D34AEB /* Poppins-Regular.otf */,
 				922EA8E322BCDF4900D34AEB /* ProximaNova-Semibold.otf */,
+				92EA518A2312C482004E6B35 /* Lato-Regular.ttf */,
+				92EA51882312C37E004E6B35 /* ProximaNova Regular.otf */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -144,7 +149,8 @@
 		92C4DE0122BBCF6F00F75CF4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				92C4DDDE22BBCF5600F75CF4 /* ViewController.swift */,
+				92EA51822312A1DF004E6B35 /* LoginVC.swift */,
+				92EA51842312A1FC004E6B35 /* RegisterVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -231,10 +237,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C4DDEA22BBCF5700F75CF4 /* LaunchScreen.storyboard in Resources */,
+				92EA518B2312C482004E6B35 /* Lato-Regular.ttf in Resources */,
 				92C4DDE722BBCF5700F75CF4 /* Assets.xcassets in Resources */,
 				922EA8E422BCDF4900D34AEB /* ProximaNova-Semibold.otf in Resources */,
-				922EA8E222BCDAEB00D34AEB /* Poppins-Regular.otf in Resources */,
 				92C4DDE222BBCF5600F75CF4 /* Main.storyboard in Resources */,
+				92EA51892312C37E004E6B35 /* ProximaNova Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				92A8DD9622BCECCC002115DD /* Button.swift in Sources */,
-				92C4DDDF22BBCF5600F75CF4 /* ViewController.swift in Sources */,
+				92EA51852312A1FC004E6B35 /* RegisterVC.swift in Sources */,
 				922EA8CD22BCB61500D34AEB /* Color.swift in Sources */,
+				92EA51832312A1DF004E6B35 /* LoginVC.swift in Sources */,
 				922EA8CF22BCB62700D34AEB /* Font.swift in Sources */,
 				92A8DD9422BCEB3D002115DD /* TextField.swift in Sources */,
 				92C4DDE522BBCF5600F75CF4 /* Volt.xcdatamodeld in Sources */,
