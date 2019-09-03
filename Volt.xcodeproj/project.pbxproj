@@ -10,6 +10,12 @@
 		922EA8CD22BCB61500D34AEB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922EA8CC22BCB61500D34AEB /* Color.swift */; };
 		922EA8CF22BCB62700D34AEB /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922EA8CE22BCB62700D34AEB /* Font.swift */; };
 		922EA8E422BCDF4900D34AEB /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 922EA8E322BCDF4900D34AEB /* ProximaNova-Semibold.otf */; };
+		92A0F1A6231E635F00C7CF7E /* MasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0F1A5231E635F00C7CF7E /* MasterVC.swift */; };
+		92A0F1A8231E639C00C7CF7E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0F1A7231E639C00C7CF7E /* HomeVC.swift */; };
+		92A0F1AA231E63AA00C7CF7E /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0F1A9231E63AA00C7CF7E /* SearchVC.swift */; };
+		92A0F1AC231E64BB00C7CF7E /* ProfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0F1AB231E64BB00C7CF7E /* ProfilVC.swift */; };
+		92A0F1AE231E64CF00C7CF7E /* EditProfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0F1AD231E64CF00C7CF7E /* EditProfilVC.swift */; };
+		92A0F1B0231E7B5000C7CF7E /* ChatListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0F1AF231E7B5000C7CF7E /* ChatListVC.swift */; };
 		92A8DD9422BCEB3D002115DD /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8DD9322BCEB3D002115DD /* TextField.swift */; };
 		92A8DD9622BCECCC002115DD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8DD9522BCECCC002115DD /* Button.swift */; };
 		92C4DDDD22BBCF5600F75CF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C4DDDC22BBCF5600F75CF4 /* AppDelegate.swift */; };
@@ -25,6 +31,8 @@
 		92EA518D2312D4FD004E6B35 /* InfoStepOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA518C2312D4FD004E6B35 /* InfoStepOneVC.swift */; };
 		92EA518F2312D514004E6B35 /* InfoStepTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA518E2312D514004E6B35 /* InfoStepTwoVC.swift */; };
 		92EA51912312D524004E6B35 /* InfoStepThreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA51902312D524004E6B35 /* InfoStepThreeVC.swift */; };
+		95B02B673AF2A8A32BF3A5AE /* Pods_Volt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C917738A5E7D5C57D01E8751 /* Pods_Volt.framework */; };
+		AB501F1B7BE1AB2A3BE7E989 /* Pods_VoltTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7304776ED5865002DA171F /* Pods_VoltTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +46,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DBA0038A77631BAF61B8206 /* Pods-Volt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Volt.debug.xcconfig"; path = "Target Support Files/Pods-Volt/Pods-Volt.debug.xcconfig"; sourceTree = "<group>"; };
+		338CC198A3E0D09777D5EE8F /* Pods-VoltTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltTests.debug.xcconfig"; path = "Target Support Files/Pods-VoltTests/Pods-VoltTests.debug.xcconfig"; sourceTree = "<group>"; };
+		46B6099F4D5590737390E161 /* Pods-VoltTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltTests.release.xcconfig"; path = "Target Support Files/Pods-VoltTests/Pods-VoltTests.release.xcconfig"; sourceTree = "<group>"; };
 		922EA8CC22BCB61500D34AEB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		922EA8CE22BCB62700D34AEB /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		922EA8E322BCDF4900D34AEB /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		92A0F1A5231E635F00C7CF7E /* MasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterVC.swift; sourceTree = "<group>"; };
+		92A0F1A7231E639C00C7CF7E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		92A0F1A9231E63AA00C7CF7E /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		92A0F1AB231E64BB00C7CF7E /* ProfilVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilVC.swift; sourceTree = "<group>"; };
+		92A0F1AD231E64CF00C7CF7E /* EditProfilVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfilVC.swift; sourceTree = "<group>"; };
+		92A0F1AF231E7B5000C7CF7E /* ChatListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListVC.swift; sourceTree = "<group>"; };
 		92A8DD9322BCEB3D002115DD /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		92A8DD9522BCECCC002115DD /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		92C4DDD922BBCF5600F75CF4 /* Volt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Volt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +77,9 @@
 		92EA518C2312D4FD004E6B35 /* InfoStepOneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoStepOneVC.swift; sourceTree = "<group>"; };
 		92EA518E2312D514004E6B35 /* InfoStepTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoStepTwoVC.swift; sourceTree = "<group>"; };
 		92EA51902312D524004E6B35 /* InfoStepThreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoStepThreeVC.swift; sourceTree = "<group>"; };
+		B2561CF9E945BE88B5715950 /* Pods-Volt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Volt.release.xcconfig"; path = "Target Support Files/Pods-Volt/Pods-Volt.release.xcconfig"; sourceTree = "<group>"; };
+		BE7304776ED5865002DA171F /* Pods_VoltTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoltTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C917738A5E7D5C57D01E8751 /* Pods_Volt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Volt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B02B673AF2A8A32BF3A5AE /* Pods_Volt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +95,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB501F1B7BE1AB2A3BE7E989 /* Pods_VoltTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		066CFECD0B87322792116154 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DBA0038A77631BAF61B8206 /* Pods-Volt.debug.xcconfig */,
+				B2561CF9E945BE88B5715950 /* Pods-Volt.release.xcconfig */,
+				338CC198A3E0D09777D5EE8F /* Pods-VoltTests.debug.xcconfig */,
+				46B6099F4D5590737390E161 /* Pods-VoltTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5A2DF2808EAD46EA76CE7ECA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C917738A5E7D5C57D01E8751 /* Pods_Volt.framework */,
+				BE7304776ED5865002DA171F /* Pods_VoltTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		922EA8C122BCB21F00D34AEB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +139,8 @@
 				92C4DDDB22BBCF5600F75CF4 /* Volt */,
 				92C4DDF322BBCF5800F75CF4 /* VoltTests */,
 				92C4DDDA22BBCF5600F75CF4 /* Products */,
+				066CFECD0B87322792116154 /* Pods */,
+				5A2DF2808EAD46EA76CE7ECA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +204,12 @@
 				92EA518C2312D4FD004E6B35 /* InfoStepOneVC.swift */,
 				92EA518E2312D514004E6B35 /* InfoStepTwoVC.swift */,
 				92EA51902312D524004E6B35 /* InfoStepThreeVC.swift */,
+				92A0F1A5231E635F00C7CF7E /* MasterVC.swift */,
+				92A0F1A7231E639C00C7CF7E /* HomeVC.swift */,
+				92A0F1A9231E63AA00C7CF7E /* SearchVC.swift */,
+				92A0F1AB231E64BB00C7CF7E /* ProfilVC.swift */,
+				92A0F1AD231E64CF00C7CF7E /* EditProfilVC.swift */,
+				92A0F1AF231E7B5000C7CF7E /* ChatListVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92C4DDF922BBCF5800F75CF4 /* Build configuration list for PBXNativeTarget "Volt" */;
 			buildPhases = (
+				8633209834C1B3BFDC63F906 /* [CP] Check Pods Manifest.lock */,
 				92C4DDD522BBCF5600F75CF4 /* Sources */,
 				92C4DDD622BBCF5600F75CF4 /* Frameworks */,
 				92C4DDD722BBCF5600F75CF4 /* Resources */,
@@ -188,6 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92C4DDFC22BBCF5800F75CF4 /* Build configuration list for PBXNativeTarget "VoltTests" */;
 			buildPhases = (
+				CD81F84B9C7B5B9BBF6DB943 /* [CP] Check Pods Manifest.lock */,
 				92C4DDEC22BBCF5800F75CF4 /* Sources */,
 				92C4DDED22BBCF5800F75CF4 /* Frameworks */,
 				92C4DDEE22BBCF5800F75CF4 /* Resources */,
@@ -263,6 +315,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8633209834C1B3BFDC63F906 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Volt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD81F84B9C7B5B9BBF6DB943 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoltTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92C4DDD522BBCF5600F75CF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -272,9 +371,15 @@
 				92A8DD9622BCECCC002115DD /* Button.swift in Sources */,
 				92EA51852312A1FC004E6B35 /* RegisterVC.swift in Sources */,
 				922EA8CD22BCB61500D34AEB /* Color.swift in Sources */,
+				92A0F1A8231E639C00C7CF7E /* HomeVC.swift in Sources */,
+				92A0F1B0231E7B5000C7CF7E /* ChatListVC.swift in Sources */,
 				92EA51832312A1DF004E6B35 /* LoginVC.swift in Sources */,
+				92A0F1AA231E63AA00C7CF7E /* SearchVC.swift in Sources */,
 				92EA518F2312D514004E6B35 /* InfoStepTwoVC.swift in Sources */,
+				92A0F1AE231E64CF00C7CF7E /* EditProfilVC.swift in Sources */,
+				92A0F1A6231E635F00C7CF7E /* MasterVC.swift in Sources */,
 				922EA8CF22BCB62700D34AEB /* Font.swift in Sources */,
+				92A0F1AC231E64BB00C7CF7E /* ProfilVC.swift in Sources */,
 				92A8DD9422BCEB3D002115DD /* TextField.swift in Sources */,
 				92C4DDE522BBCF5600F75CF4 /* Volt.xcdatamodeld in Sources */,
 				92EA51912312D524004E6B35 /* InfoStepThreeVC.swift in Sources */,
@@ -438,6 +543,7 @@
 		};
 		92C4DDFA22BBCF5800F75CF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DBA0038A77631BAF61B8206 /* Pods-Volt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +562,7 @@
 		};
 		92C4DDFB22BBCF5800F75CF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2561CF9E945BE88B5715950 /* Pods-Volt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -474,6 +581,7 @@
 		};
 		92C4DDFD22BBCF5800F75CF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 338CC198A3E0D09777D5EE8F /* Pods-VoltTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,6 +603,7 @@
 		};
 		92C4DDFE22BBCF5800F75CF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B6099F4D5590737390E161 /* Pods-VoltTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
