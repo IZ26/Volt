@@ -24,6 +24,8 @@
 		92C4DDE722BBCF5700F75CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C4DDE622BBCF5700F75CF4 /* Assets.xcassets */; };
 		92C4DDEA22BBCF5700F75CF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C4DDE822BBCF5700F75CF4 /* LaunchScreen.storyboard */; };
 		92C4DDF522BBCF5800F75CF4 /* VoltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C4DDF422BBCF5800F75CF4 /* VoltTests.swift */; };
+		92D4EBA7231EAF5300C4B78E /* CardDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D4EBA6231EAF5300C4B78E /* CardDataModel.swift */; };
+		92D4EBA9231EAFE100C4B78E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D4EBA8231EAFE100C4B78E /* User.swift */; };
 		92EA51832312A1DF004E6B35 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA51822312A1DF004E6B35 /* LoginVC.swift */; };
 		92EA51852312A1FC004E6B35 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EA51842312A1FC004E6B35 /* RegisterVC.swift */; };
 		92EA51892312C37E004E6B35 /* ProximaNova Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92EA51882312C37E004E6B35 /* ProximaNova Regular.otf */; };
@@ -70,6 +72,8 @@
 		92C4DDF022BBCF5800F75CF4 /* VoltTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C4DDF422BBCF5800F75CF4 /* VoltTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltTests.swift; sourceTree = "<group>"; };
 		92C4DDF622BBCF5800F75CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D4EBA6231EAF5300C4B78E /* CardDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataModel.swift; sourceTree = "<group>"; };
+		92D4EBA8231EAFE100C4B78E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		92EA51822312A1DF004E6B35 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		92EA51842312A1FC004E6B35 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		92EA51882312C37E004E6B35 /* ProximaNova Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova Regular.otf"; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				92C4DDE322BBCF5600F75CF4 /* Volt.xcdatamodeld */,
+				92D4EBA6231EAF5300C4B78E /* CardDataModel.swift */,
+				92D4EBA8231EAFE100C4B78E /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -374,6 +380,7 @@
 				92A0F1A8231E639C00C7CF7E /* HomeVC.swift in Sources */,
 				92A0F1B0231E7B5000C7CF7E /* ChatListVC.swift in Sources */,
 				92EA51832312A1DF004E6B35 /* LoginVC.swift in Sources */,
+				92D4EBA7231EAF5300C4B78E /* CardDataModel.swift in Sources */,
 				92A0F1AA231E63AA00C7CF7E /* SearchVC.swift in Sources */,
 				92EA518F2312D514004E6B35 /* InfoStepTwoVC.swift in Sources */,
 				92A0F1AE231E64CF00C7CF7E /* EditProfilVC.swift in Sources */,
@@ -384,6 +391,7 @@
 				92C4DDE522BBCF5600F75CF4 /* Volt.xcdatamodeld in Sources */,
 				92EA51912312D524004E6B35 /* InfoStepThreeVC.swift in Sources */,
 				92C4DDDD22BBCF5600F75CF4 /* AppDelegate.swift in Sources */,
+				92D4EBA9231EAFE100C4B78E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

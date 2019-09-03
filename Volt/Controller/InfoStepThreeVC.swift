@@ -17,11 +17,44 @@ class InfoStepThreeVC: UIViewController {
     @IBOutlet weak var stepThreeTitle: UILabel!
     @IBOutlet weak var warningInfo: UIView!
     @IBOutlet weak var warningInfoText: UILabel!
+    
+    // Speed slider
     @IBOutlet weak var speedTitle: UILabel!
+    @IBOutlet weak var speedValue: UILabel!
     @IBAction func speedSlider(_ sender: UISlider) {
-        getSliderValue(label: speedTitle, slider: sender)
+        getSliderValue(label: speedValue, slider: sender)
     }
     
+    // Endurance slider
+    @IBOutlet weak var enduranceTitle: UILabel!
+    @IBOutlet weak var enduranceValue: UILabel!
+    @IBAction func enduranceSlider(_ sender: UISlider) {
+        getSliderValue(label: enduranceValue, slider: sender)
+    }
+    
+    // Serve slider
+    @IBOutlet weak var serveTitle: UILabel!
+    @IBOutlet weak var serveValue: UILabel!
+    @IBAction func serveSlider(_ sender: UISlider) {
+        getSliderValue(label: serveValue, slider: sender)
+    }
+    
+    // Forehand slider
+    @IBOutlet weak var forehandTitle: UILabel!
+    @IBOutlet weak var forehandValue: UILabel!
+    @IBAction func forehandSlider(_ sender: UISlider) {
+       getSliderValue(label: forehandValue, slider: sender)
+    }
+    
+    // Backhand slider
+    @IBOutlet weak var backhandTitle: UILabel!
+    @IBOutlet weak var backhandValue: UILabel!
+    @IBAction func backhandSlider(_ sender: UISlider) {
+        getSliderValue(label: backhandValue, slider: sender)
+    }
+    
+    @IBOutlet weak var validateAllInfo: Button!
+    @IBOutlet weak var stepThreeGoHome: Button!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,16 +62,26 @@ class InfoStepThreeVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // Get slider value and change label style
     func getSliderValue(label: UILabel, slider: UISlider){
-        var value = 0
-        let sliderValue = Int(slider.value)
+        let valueSlider = Int(slider.value)
+        let sliderText = String(Int(slider.value))
         
-        value = sliderValue
-        
-        if value < 50 {
-            label.textColor = UIColor.greenLemon
-        }else{
-            label.textColor = UIColor.declineBlack
+        if valueSlider <= 25{
+            label.text = "\(sliderText) Débutant"
+            label.textColor = UIColor.declineRed
+        }
+        else if valueSlider <= 50 {
+            label.text = "\(sliderText) Moyen"
+            label.textColor = UIColor.gold
+        }
+        else if valueSlider <= 75 {
+            label.text = "\(sliderText) Intermédiaire"
+            label.textColor = UIColor.declinePurple
+        }
+        else{
+            label.text = "\(sliderText) Expert"
+            label.textColor = UIColor.declineGreen
         }
         
     }
@@ -72,11 +115,50 @@ extension InfoStepThreeVC{
         
         warningInfoText.text = "Important ! Une fois votre évaluation terminée, il ne sera plus possible de la modifier. Celles-ci seront ajustée par vos adversaires"
         warningInfoText.textColor = UIColor.declineBlack
-        warningInfoText.font = UIFont.textSmall
+        warningInfoText.font = UIFont.textExtraSmall
         
         speedTitle.text = "Vitesse"
-        speedTitle.font = UIFont.textMedium
+        speedTitle.font = UIFont.smallTitle
         speedTitle.textColor = UIColor.declineBlack
+        speedValue.text = "50 Moyen"
+        speedValue.font = UIFont.textExtraSmall
+        speedValue.textColor = UIColor.gold
+        
+        enduranceTitle.text = "Endurance"
+        enduranceTitle.font = UIFont.smallTitle
+        enduranceTitle.textColor = UIColor.declineBlack
+        enduranceValue.text = "50 Moyen"
+        enduranceValue.font = UIFont.textExtraSmall
+        enduranceValue.textColor = UIColor.gold
+        
+        serveTitle.text = "Service"
+        serveTitle.font = UIFont.smallTitle
+        serveTitle.textColor = UIColor.declineBlack
+        serveValue.text = "50 Moyen"
+        serveValue.font = UIFont.textExtraSmall
+        serveValue.textColor = UIColor.gold
+        
+        forehandTitle.text = "Coup droit"
+        forehandTitle.font = UIFont.smallTitle
+        forehandTitle.textColor = UIColor.declineBlack
+        forehandValue.text = "50 Moyen"
+        forehandValue.font = UIFont.textExtraSmall
+        forehandValue.textColor = UIColor.gold
+        
+        backhandTitle.text = "Revers"
+        backhandTitle.font = UIFont.smallTitle
+        backhandTitle.textColor = UIColor.declineBlack
+        backhandValue.text = "50 Moyen"
+        backhandValue.font = UIFont.textExtraSmall
+        backhandValue.textColor = UIColor.gold
+        
+        validateAllInfo.style = .green
+        validateAllInfo.setTitle("CONTINUER", for: .normal)
+        validateAllInfo.titleLabel?.font = UIFont.button
+        
+        stepThreeGoHome.style = .bordered
+        stepThreeGoHome.setTitle("Compléter mon profil plus tard", for: .normal)
+        stepThreeGoHome.titleLabel?.font = UIFont.smallTitle
     }
 
 }

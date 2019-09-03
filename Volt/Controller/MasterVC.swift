@@ -27,6 +27,7 @@ class MasterVC: UIViewController {
         setupView()
     }
     
+    
     func barButton(imageName: String, selector: Selector) -> UIBarButtonItem {
         let button = UIButton(type: .custom)
         button.setImage(UIImage(named: imageName), for: .normal)
@@ -75,7 +76,7 @@ class MasterVC: UIViewController {
     
     private func setupSegmentedControl(){
         
-        changeView.frame = CGRect(x: 0, y: 0, width: 80, height: 30)
+        changeView.frame = CGRect(x: 0, y: 0, width: 120, height: 30)
         changeView.layer.cornerRadius = changeView.bounds.height / 2
         changeView.layer.masksToBounds = true
         changeView.layer.borderColor = UIColor.declineBlack.cgColor
@@ -83,7 +84,7 @@ class MasterVC: UIViewController {
         changeView.tintColor = UIColor.declineBlack
         
         changeView.removeAllSegments()
-        changeView.insertSegment(withTitle: "Home", at: 0, animated: false)
+        changeView.insertSegment(withTitle: "Cards", at: 0, animated: false)
         changeView.insertSegment(withTitle: "Search", at: 1, animated: false)
         changeView.addTarget(self, action: #selector(selectionDidChange(_:)), for: .valueChanged)
 
