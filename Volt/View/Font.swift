@@ -28,6 +28,9 @@ extension UIFont {
     public class var current: UIFont{
         return customFont(name: "ProximaNova-Semibold", size: 16)
     }
+    public class var largeTitle: UIFont{
+        return customFont(name: "ProximaNova-Semibold", size: 17)
+    }
     public class var title: UIFont {
         return customFont(name: "ProximaNova-Semibold", size: 30)
     }
@@ -41,9 +44,12 @@ extension UIFont {
     public class var textExtraSmall: UIFont{
         return customFont(name: "Lato-Regular", size: 10)
     }
-    
     public class var textSmall: UIFont{
         return customFont(name: "Lato-Regular", size: 12)
+    }
+    
+    public class var textLarge: UIFont{
+        return customFont(name: "Lato-Regular", size: 13)
     }
     
     public class var textMedium: UIFont{

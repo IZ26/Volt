@@ -10,16 +10,13 @@ import UIKit
 
 class CardProfil: UIView {
     
-    var cardImage = ""
-    var cardHand = ""
-    var cardValue = 0
-    var cardFirstName = ""
-    var cardLastName = ""
-    var cardSpeed = 0
-    var cardServe = 0
-    var cardEndurance = 0
-    var cardForhand = 0
-    var cardBackhand = 0
+    
+    let user = User()
+    
+    var cardImage = "avatar"
+    var cardHand = "Droitier"
+    var cardFirstName = "Ryan"
+    var cardLastName = "Reynolds"
     
     
     @IBOutlet var cardProfil: UIView!
@@ -28,9 +25,37 @@ class CardProfil: UIView {
     @IBOutlet weak var profilCompetenceBg: UIView!
     @IBOutlet weak var profilValue: UILabel!
     @IBOutlet weak var profilHand: UILabel!
+    
+    @IBOutlet weak var profilName: UILabel!
+    @IBOutlet weak var profilAge: UILabel!
+    @IBOutlet weak var profilLocation: UILabel!
+    
+    
+    
+    @IBOutlet weak var profilSport: UILabel!
+    @IBOutlet weak var profilGamePlayed: UILabel!
+    
 
     // Card competence
+    @IBOutlet weak var speedContainer: CompetenceComponent!
+    @IBOutlet weak var speedValue: UILabel!
+    @IBOutlet weak var speedTitle: UILabel!
     
+    @IBOutlet weak var enduranceContainer: CompetenceComponent!
+    @IBOutlet weak var enduranceValue: UILabel!
+    @IBOutlet weak var enduranceTitle: UILabel!
+    
+    @IBOutlet weak var serveContainer: CompetenceComponent!
+    @IBOutlet weak var serveValue: UILabel!
+    @IBOutlet weak var serveTitle: UILabel!
+    
+    @IBOutlet weak var forehandContainer: CompetenceComponent!
+    @IBOutlet weak var forehandValue: UILabel!
+    @IBOutlet weak var forehandTitle: UILabel!
+    
+    @IBOutlet weak var backhandContainer: CompetenceComponent!
+    @IBOutlet weak var backhandValue: UILabel!
+    @IBOutlet weak var backhandTitle: UILabel!
     
     override init (frame: CGRect)
     {
@@ -44,39 +69,105 @@ class CardProfil: UIView {
     }
     
     private func setCardComponent(){
-        cardImage = "avatar"
-        cardValue = 96
-        cardHand = "Droitier"
-        
-        cardProfil.backgroundColor = UIColor(patternImage: UIImage(named:  cardImage)!)
+        cardProfil.backgroundColor = UIColor(patternImage: UIImage(named: user.image)!)
         cardProfil.frame = self.bounds
         cardProfil.layer.cornerRadius = 15
         cardProfil.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        profilValue.text = String(cardValue)
+        profilName.text = "\(user.firstName) \(user.lastName)"
+        profilName.textColor = UIColor.white
+        profilName.font = UIFont.largeTitle
+        
+        profilAge.text = "\(user.age) ans"
+        profilAge.font = UIFont.textLarge
+        profilAge.textColor = UIColor.white
+        
+        profilLocation.text = user.location
+        profilLocation.textColor = UIColor.white
+        profilLocation.font = UIFont.textSmall
+        
+        profilValue.text = String(user.calcCardValue())
         profilValue.font = UIFont.cardValue
         profilValue.textColor = UIColor.white
 
-        profilHand.text = cardHand.uppercased()
+        profilHand.text = user.hand.uppercased()
         profilHand.font = UIFont.textExtraSmall
         profilHand.textColor = UIColor.white
         
         blurredEffect.layer.cornerRadius = 15
         blurredEffect.clipsToBounds = true
         
-        profilImage.image = UIImage(named: cardImage)
+        profilImage.image = UIImage(named: user.image)
         profilImage.contentMode = .scaleAspectFill
         profilImage.layer.masksToBounds = false
         profilImage.layer.cornerRadius = profilImage.frame.height/2
         profilImage.clipsToBounds = true
-
+        
         profilCompetenceBg.backgroundColor = UIColor.declineBlack
+        
+        speedValue.text = String(user.speed)
+        enduranceValue.text = String(user.endurance)
+        serveValue.text = String(user.serve)
+        forehandValue.text = String(user.forehand)
+        backhandValue.text = String(user.backhand)
+    
+        profilSport.textColor = UIColor.white
+        profilSport.text = user.sport.uppercased()
+        profilSport.font = UIFont.textMedium
+        
+        profilGamePlayed.textColor = UIColor(white: 1, alpha: 0.5)
+        profilGamePlayed.text = user.matchPlayed
+        profilGamePlayed.font = UIFont.textSmall
+    }
+    
+    private func setCompetenceContainer(){
+        let speed = "Vitesse"
+        let endurance = "Endurance"
+        let serve = "Service"
+        let forehand = "Coup droit"
+        let backhand = "Revers"
+        
+        speedContainer.style = .bordered
+        speedValue.textColor = UIColor.white
+        speedValue.font = UIFont.current
+        speedTitle.textColor = UIColor.white
+        speedTitle.text = speed.uppercased()
+        speedTitle.font = UIFont.textSmall
+        
+        enduranceContainer.style = .bordered
+        enduranceValue.textColor = UIColor.white
+        enduranceValue.font = UIFont.current
+        enduranceTitle.textColor = UIColor.white
+        enduranceTitle.text = endurance.uppercased()
+        enduranceTitle.font = UIFont.textSmall
+        
+        serveContainer.style = .bordered
+        serveValue.textColor = UIColor.white
+        serveValue.font = UIFont.current
+        serveTitle.textColor = UIColor.white
+        serveTitle.text = serve.uppercased()
+        serveTitle.font = UIFont.textSmall
+        
+        forehandContainer.style = .bordered
+        forehandValue.textColor = UIColor.white
+        forehandValue.font = UIFont.current
+        forehandTitle.textColor = UIColor.white
+        forehandTitle.text = forehand.uppercased()
+        forehandTitle.font = UIFont.textSmall
+        
+        backhandContainer.style = .bordered
+        backhandValue.textColor = UIColor.white
+        backhandValue.font = UIFont.current
+        backhandTitle.textColor = UIColor.white
+        backhandTitle.text = backhand.uppercased()
+        backhandTitle.font = UIFont.textSmall
     }
     
     private func commonInit(){
     Bundle.main.loadNibNamed("CardProfil", owner: self, options: nil)
         addSubview(cardProfil)
         
+        setCompetenceContainer()
         setCardComponent()
     }
 

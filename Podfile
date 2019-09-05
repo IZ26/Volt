@@ -8,6 +8,7 @@ target 'Volt' do
   
   use_frameworks!
   pod 'Koloda'
+  pod 'FlexLayout'
 
   # Pods for Volt
   target 'VoltTests' do

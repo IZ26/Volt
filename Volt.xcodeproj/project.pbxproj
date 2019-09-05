@@ -15,6 +15,7 @@
 		925431222320F4DF00C98E9B /* OverlayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925431212320F4DF00C98E9B /* OverlayCard.swift */; };
 		925431242320F53400C98E9B /* OverlayCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 925431232320F53400C98E9B /* OverlayCard.xib */; };
 		9254312623211F3500C98E9B /* SF-Compact-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9254312523211DCC00C98E9B /* SF-Compact-Display-Semibold.otf */; };
+		92543128232138AA00C98E9B /* CompetenceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92543127232138AA00C98E9B /* CompetenceComponent.swift */; };
 		92A0F1A6231E635F00C7CF7E /* MasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0F1A5231E635F00C7CF7E /* MasterVC.swift */; };
 		92A0F1A8231E639C00C7CF7E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0F1A7231E639C00C7CF7E /* HomeVC.swift */; };
 		92A0F1AA231E63AA00C7CF7E /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0F1A9231E63AA00C7CF7E /* SearchVC.swift */; };
@@ -64,6 +65,7 @@
 		925431212320F4DF00C98E9B /* OverlayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayCard.swift; sourceTree = "<group>"; };
 		925431232320F53400C98E9B /* OverlayCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlayCard.xib; sourceTree = "<group>"; };
 		9254312523211DCC00C98E9B /* SF-Compact-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Semibold.otf"; sourceTree = "<group>"; };
+		92543127232138AA00C98E9B /* CompetenceComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetenceComponent.swift; sourceTree = "<group>"; };
 		92A0F1A5231E635F00C7CF7E /* MasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterVC.swift; sourceTree = "<group>"; };
 		92A0F1A7231E639C00C7CF7E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		92A0F1A9231E63AA00C7CF7E /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				921EC452231FC1DE0056F364 /* CardProfil.xib */,
 				925431212320F4DF00C98E9B /* OverlayCard.swift */,
 				925431232320F53400C98E9B /* OverlayCard.xib */,
+				92543127232138AA00C98E9B /* CompetenceComponent.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92543128232138AA00C98E9B /* CompetenceComponent.swift in Sources */,
 				92EA518D2312D4FD004E6B35 /* InfoStepOneVC.swift in Sources */,
 				92A8DD9622BCECCC002115DD /* Button.swift in Sources */,
 				92EA51852312A1FC004E6B35 /* RegisterVC.swift in Sources */,

@@ -1053,10 +1053,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWz-0c-3AH" customClass="KolodaView" customModule="Koloda">
-                                <rect key="frame" x="15" y="94" width="345" height="500"/>
+                                <rect key="frame" x="15" y="94" width="345" height="480"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="2tW-Lf-YCO"/>
-                                    <constraint firstAttribute="width" secondItem="NWz-0c-3AH" secondAttribute="height" multiplier="69:100" id="Hqq-Cq-sCZ"/>
+                                    <constraint firstAttribute="height" constant="480" id="2tW-Lf-YCO"/>
+                                    <constraint firstAttribute="width" secondItem="NWz-0c-3AH" secondAttribute="height" multiplier="23:32" id="BIY-LQ-T2J"/>
                                 </constraints>
                             </view>
                         </subviews>
