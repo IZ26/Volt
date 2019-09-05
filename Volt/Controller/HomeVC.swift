@@ -7,54 +7,56 @@
 //
 
 import UIKit
+import Koloda
 
 class HomeVC: UIViewController {
     
-    @IBOutlet weak var cardProfil: UIView!
-    @IBOutlet weak var blurredEffect: UIVisualEffectView!
-    @IBOutlet weak var profilImage: UIImageView!
-    @IBOutlet weak var profilName: UILabel!
-    @IBOutlet weak var profilAge: UILabel!
-    @IBOutlet weak var profilLocation: UILabel!
-    
+    @IBOutlet var kolodaView: KolodaView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setStyle()
-        setCardInfo()
+        kolodaView.dataSource = self
+        kolodaView.delegate = self
+        
+        getAllFont()
     }
     
-    func setCardInfo(){
-        let lastName = "Delcourt"
-        let firstName = "Angelique"
-        let age = "26"
-        let location = "6"
-        
-        profilName.text = "\(firstName) \(lastName)"
-        profilAge.text = "\(age) ans"
-        profilLocation.text = "\(location) km de chez vous"
+    func getAllFont(){
+        for family: String in UIFont.familyNames
+        {
+            print(family)
+            for names: String in UIFont.fontNames(forFamilyName: family)
+            {
+                print("== \(names)")
+            }
+        }
+    }
+
+}
+
+extension HomeVC: KolodaViewDelegate {
+    func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
+        koloda.reloadData()
     }
 }
 
-extension HomeVC{
-    func setStyle(){
-        cardProfil.layer.cornerRadius = 15
-        cardProfil.backgroundColor = UIColor(patternImage: UIImage(named: "femme")!)
+extension HomeVC: KolodaViewDataSource {
+    
+    func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
+        return 10
+    }
+    
+    func kolodaSpeedThatCardShouldDrag(_ koloda: KolodaView) -> DragSpeed {
+        return .fast
+    }
+    
+    func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
+        let view = CardProfil()
         
-        blurredEffect.layer.cornerRadius = 15
-        blurredEffect.clipsToBounds = true
-        
-        profilImage.image = UIImage(named: "femme")
-        profilImage.contentMode = .scaleAspectFill
-        profilImage.layer.cornerRadius = profilImage.bounds.height / 2
-        
-        profilName.textColor = UIColor.white
-        profilName.font = UIFont.current
-        
-        profilAge.textColor = UIColor.white
-        profilAge.font = UIFont.textSmall
-        
-        profilLocation.textColor = UIColor.white
-        profilLocation.font = UIFont.textSmall
+        return view
+    }
+    
+    func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
+        return Bundle.main.loadNibNamed("OverlayCard", owner: self, options: nil)?[0] as? OverlayView
     }
 }

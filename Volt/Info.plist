@@ -43,6 +43,7 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
+		<string>SF-Compact-Display-Semibold.otf</string>
 		<string>Lato-Regular.ttf</string>
 		<string>Poppins-Regular.otf</string>
 		<string>ProximaNova-Semibold.otf</string>

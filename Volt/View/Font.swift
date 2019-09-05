@@ -32,6 +32,11 @@ extension UIFont {
         return customFont(name: "ProximaNova-Semibold", size: 30)
     }
     
+    // Font --> SF Compact Display
+    public class var cardValue: UIFont {
+        return customFont(name: "SFCompactDisplay-Semibold", size: 50)
+    }
+    
     // Font --> Lato-Regular
     public class var textExtraSmall: UIFont{
         return customFont(name: "Lato-Regular", size: 10)

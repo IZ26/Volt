@@ -22,12 +22,20 @@ extension UIColor {
         return UIColor(red:0.89, green:0.18, blue:0.18, alpha:1.0)
     }
     
+    public class var declineRedOpacity: UIColor {
+        return UIColor(red:0.89, green:0.18, blue:0.18, alpha:0.7)
+    }
+    
     public class var gold: UIColor {
         return UIColor(red:1.0, green:0.68, blue:0.08, alpha:1.0)
     }
     
     public class var declineGreen: UIColor {
         return UIColor(red:0.00, green:0.80, blue:0.38, alpha:1.0)
+    }
+    
+    public class var declineGreenOpacity: UIColor {
+        return UIColor(red:0.00, green:0.80, blue:0.38, alpha:0.7)
     }
     
     public class var declinePurple: UIColor {
