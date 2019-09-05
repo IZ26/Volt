@@ -12,7 +12,7 @@ struct User{
     var image = "femme"
     var firstName = "Angélique"
     var lastName = "Delcourt"
-    var location = "6km de chez vous"
+    var location = "6 km de chez vous"
     var age = 26
     var cardValue = Int()
     var hand = "Droitier"

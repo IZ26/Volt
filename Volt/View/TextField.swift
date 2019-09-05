@@ -41,10 +41,10 @@ class TextField: UITextField{
         
         switch style {
         case .standard:
-            layer.cornerRadius = 20
+            layer.cornerRadius = layer.bounds.height / 2
             layer.masksToBounds = true
         case .bordered:
-            layer.cornerRadius = 20
+            layer.cornerRadius = layer.bounds.height / 2
             layer.masksToBounds = false
             layer.borderWidth = 0.25
             layer.borderColor = UIColor.declineBlack.cgColor

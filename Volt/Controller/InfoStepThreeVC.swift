@@ -58,8 +58,11 @@ class InfoStepThreeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
         setStyle()
-        // Do any additional setup after loading the view.
     }
     
     // Get slider value and change label style
@@ -84,6 +87,10 @@ class InfoStepThreeVC: UIViewController {
             label.textColor = UIColor.declineGreen
         }
         
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 
 }

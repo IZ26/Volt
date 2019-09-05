@@ -18,6 +18,10 @@ extension UIColor {
         return UIColor(red:0.09, green:0.09, blue:0.09, alpha:1.0)
     }
     
+    public class var declineBlackOpacity: UIColor {
+        return UIColor(red:0.09, green:0.09, blue:0.09, alpha:0.5)
+    }
+    
     public class var declineRed: UIColor {
         return UIColor(red:0.89, green:0.18, blue:0.18, alpha:1.0)
     }

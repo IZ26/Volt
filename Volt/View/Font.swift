@@ -36,6 +36,10 @@ extension UIFont {
     }
     
     // Font --> SF Compact Display
+    public class var sf7: UIFont {
+        return customFont(name: "SFCompactDisplay-Semibold", size: 8)
+    }
+    
     public class var cardValue: UIFont {
         return customFont(name: "SFCompactDisplay-Semibold", size: 50)
     }
