@@ -25,7 +25,7 @@ class CompetenceComponent: UIView{
         case .bordered:
             layer.cornerRadius = layer.bounds.height / 2
             backgroundColor = UIColor(white: 1, alpha: 0)
-            layer.borderWidth = 0.6
+            layer.borderWidth = 1
             layer.borderColor = UIColor.greenLemon.cgColor
         }
     }

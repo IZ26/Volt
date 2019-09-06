@@ -28,25 +28,25 @@ class Button: UIButton {
             case .green:
                 backgroundColor = UIColor.greenLemon
                 tintColor = UIColor.black
-                layer.cornerRadius = 20
+                layer.cornerRadius = layer.bounds.height / 2
             case .black:
                 backgroundColor = UIColor.declineBlack
                 tintColor = UIColor.white
-                layer.cornerRadius = 20
+                layer.cornerRadius = layer.bounds.height / 2
             case .white:
                 backgroundColor = UIColor.white
                 tintColor = UIColor.declineBlack
-                layer.cornerRadius = 20
+                layer.cornerRadius = layer.bounds.height / 2
             case .backgroundNone:
                 backgroundColor = .clear
                 tintColor = UIColor.white
-                layer.cornerRadius = 20
+                layer.cornerRadius = layer.bounds.height / 2
                 layer.borderWidth = 1
                 layer.borderColor = UIColor.greenLemon.cgColor
         case .bordered:
             backgroundColor = .clear
             tintColor = UIColor.declineBlack
-            layer.cornerRadius = 20
+            layer.cornerRadius = layer.bounds.height / 2
             layer.borderWidth = 1
             layer.borderColor = UIColor.greenLemon.cgColor
         }

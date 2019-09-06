@@ -24,15 +24,16 @@ class ChatListVC: UIViewController,  UITableViewDataSource, UITableViewDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        view.addGestureRecognizer(tap)
-        
         setNavBar()
         setStyle()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goChat", sender: self)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

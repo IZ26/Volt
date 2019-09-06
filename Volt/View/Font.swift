@@ -19,6 +19,9 @@ extension UIFont {
 
     
     // Font --> ProximaNova-Semibold
+    public class var proxima10: UIFont {
+        return customFont(name: "ProximaNova-Semibold", size: 10)
+    }
     public class var smallTitle: UIFont {
         return customFont(name: "ProximaNova-Semibold", size: 12)
     }

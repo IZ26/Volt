@@ -10,9 +10,12 @@ import Foundation
 
 struct User{
     var image = "femme"
+    var username = "angelique75"
     var firstName = "Angélique"
     var lastName = "Delcourt"
     var location = "6 km de chez vous"
+    var mail = "angelique.delcourt@gmail.com"
+    var city = "Paris"
     var age = 26
     var cardValue = Int()
     var hand = "Droitier"

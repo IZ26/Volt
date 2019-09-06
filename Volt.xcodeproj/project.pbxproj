@@ -12,6 +12,8 @@
 		922EA8CD22BCB61500D34AEB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922EA8CC22BCB61500D34AEB /* Color.swift */; };
 		922EA8CF22BCB62700D34AEB /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922EA8CE22BCB62700D34AEB /* Font.swift */; };
 		922EA8E422BCDF4900D34AEB /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 922EA8E322BCDF4900D34AEB /* ProximaNova-Semibold.otf */; };
+		9252B44C2322720000EB053B /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252B44B2322720000EB053B /* CollectionCell.swift */; };
+		9252B44E23229DEC00EB053B /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252B44D23229DEC00EB053B /* ChatVC.swift */; };
 		925431222320F4DF00C98E9B /* OverlayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925431212320F4DF00C98E9B /* OverlayCard.swift */; };
 		925431242320F53400C98E9B /* OverlayCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 925431232320F53400C98E9B /* OverlayCard.xib */; };
 		9254312623211F3500C98E9B /* SF-Compact-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9254312523211DCC00C98E9B /* SF-Compact-Display-Semibold.otf */; };
@@ -63,6 +65,8 @@
 		922EA8CC22BCB61500D34AEB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		922EA8CE22BCB62700D34AEB /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		922EA8E322BCDF4900D34AEB /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		9252B44B2322720000EB053B /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		9252B44D23229DEC00EB053B /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		925431212320F4DF00C98E9B /* OverlayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayCard.swift; sourceTree = "<group>"; };
 		925431232320F53400C98E9B /* OverlayCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlayCard.xib; sourceTree = "<group>"; };
 		9254312523211DCC00C98E9B /* SF-Compact-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Semibold.otf"; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 				925431232320F53400C98E9B /* OverlayCard.xib */,
 				92543127232138AA00C98E9B /* CompetenceComponent.swift */,
 				9254312923218F3F00C98E9B /* CustomCell.swift */,
+				9252B44B2322720000EB053B /* CollectionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				92A0F1AB231E64BB00C7CF7E /* ProfilVC.swift */,
 				92A0F1AD231E64CF00C7CF7E /* EditProfilVC.swift */,
 				92A0F1AF231E7B5000C7CF7E /* ChatListVC.swift */,
+				9252B44D23229DEC00EB053B /* ChatVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -424,8 +430,10 @@
 				92A0F1A8231E639C00C7CF7E /* HomeVC.swift in Sources */,
 				92A0F1B0231E7B5000C7CF7E /* ChatListVC.swift in Sources */,
 				92EA51832312A1DF004E6B35 /* LoginVC.swift in Sources */,
+				9252B44E23229DEC00EB053B /* ChatVC.swift in Sources */,
 				92D4EBA7231EAF5300C4B78E /* CardDataModel.swift in Sources */,
 				92A0F1AA231E63AA00C7CF7E /* SearchVC.swift in Sources */,
+				9252B44C2322720000EB053B /* CollectionCell.swift in Sources */,
 				925431222320F4DF00C98E9B /* OverlayCard.swift in Sources */,
 				92EA518F2312D514004E6B35 /* InfoStepTwoVC.swift in Sources */,
 				92A0F1AE231E64CF00C7CF7E /* EditProfilVC.swift in Sources */,
