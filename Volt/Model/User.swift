@@ -9,29 +9,29 @@
 import Foundation
 
 struct User{
-    var image = "femme"
-    var username = "angelique75"
-    var firstName = "Angélique"
-    var lastName = "Delcourt"
-    var location = "6 km de chez vous"
-    var mail = "angelique.delcourt@gmail.com"
-    var city = "Paris"
-    var age = 26
+    var image = String()
+    var username = String()
+    var firstName = String()
+    var lastName = String()
+    var location = String()
+    var mail = String()
+    var city = String()
+    var age = Int()
     var cardValue = Int()
-    var hand = "Droitier"
-    var sport = "Tennis"
-    var matchPlayed = "27 parties"
-    var speed = 78
-    var endurance = 76
-    var serve = 83
-    var forehand = 78
-    var backhand = 93
+    var hand = String()
+    var sport = String()
+    var matchPlayed = String()
+    var speed = Int()
+    var endurance = Int()
+    var serve = Int()
+    var forehand = Int()
+    var backhand = Int()
     
     
-    public func calcCardValue() -> Int {
+    public func calcCardValue(speedValue: Int, enduranceValue: Int, serveValue: Int, forehandValue: Int, backhandValue: Int) -> Int {
         var value = cardValue
         
-        value = speed + endurance + serve + forehand + backhand
+        value = speedValue + enduranceValue + serveValue + forehandValue + backhandValue
         
         value = Int(value / 5)
         

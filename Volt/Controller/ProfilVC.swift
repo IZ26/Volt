@@ -105,7 +105,7 @@ extension ProfilVC{
         
         profilValue.textColor = UIColor.declineBlack
         profilValue.font = UIFont.cardValue
-        profilValue.text = "\(user.calcCardValue())"
+        profilValue.text = "100"
         
         profilHand.textColor = UIColor.declineBlack
         profilHand.font = UIFont.textExtraSmall

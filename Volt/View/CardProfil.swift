@@ -11,14 +11,6 @@ import UIKit
 class CardProfil: UIView {
     
     
-    let user = User()
-    
-    var cardImage = "avatar"
-    var cardHand = "Droitier"
-    var cardFirstName = "Ryan"
-    var cardLastName = "Reynolds"
-    
-    
     @IBOutlet var cardProfil: UIView!
     @IBOutlet weak var blurredEffect: UIVisualEffectView!
     @IBOutlet weak var profilImage: UIImageView!
@@ -69,54 +61,41 @@ class CardProfil: UIView {
     }
     
     private func setCardComponent(){
-        cardProfil.backgroundColor = UIColor(patternImage: UIImage(named: user.image)!)
+        cardProfil.backgroundColor = UIColor(patternImage: UIImage(named: "avatar")!)
         cardProfil.frame = self.bounds
         cardProfil.layer.cornerRadius = 15
         cardProfil.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        profilName.text = "\(user.firstName) \(user.lastName)"
         profilName.textColor = UIColor.white
         profilName.font = UIFont.largeTitle
         
-        profilAge.text = "\(user.age) ans"
         profilAge.font = UIFont.textLarge
         profilAge.textColor = UIColor.white
         
-        profilLocation.text = user.location
         profilLocation.textColor = UIColor.white
         profilLocation.font = UIFont.textSmall
         
-        profilValue.text = String(user.calcCardValue())
         profilValue.font = UIFont.cardValue
         profilValue.textColor = UIColor.white
 
-        profilHand.text = user.hand.uppercased()
         profilHand.font = UIFont.textExtraSmall
         profilHand.textColor = UIColor.white
         
         blurredEffect.layer.cornerRadius = 15
         blurredEffect.clipsToBounds = true
         
-        profilImage.image = UIImage(named: user.image)
+        profilImage.image = UIImage(named: "avatar")
         profilImage.contentMode = .scaleAspectFill
         profilImage.layer.masksToBounds = false
         profilImage.layer.cornerRadius = profilImage.frame.height/2
         profilImage.clipsToBounds = true
         
         profilCompetenceBg.backgroundColor = UIColor.declineBlack
-        
-        speedValue.text = String(user.speed)
-        enduranceValue.text = String(user.endurance)
-        serveValue.text = String(user.serve)
-        forehandValue.text = String(user.forehand)
-        backhandValue.text = String(user.backhand)
     
         profilSport.textColor = UIColor.white
-        profilSport.text = user.sport.uppercased()
         profilSport.font = UIFont.textMedium
         
         profilGamePlayed.textColor = UIColor(white: 1, alpha: 0.5)
-        profilGamePlayed.text = user.matchPlayed
         profilGamePlayed.font = UIFont.textSmall
     }
     

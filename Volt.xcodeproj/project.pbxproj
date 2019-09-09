@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9203121C2326911A004C4B06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9203121B23269112004C4B06 /* GoogleService-Info.plist */; };
 		921EC453231FC1DE0056F364 /* CardProfil.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921EC452231FC1DE0056F364 /* CardProfil.xib */; };
 		921EC455231FC1FB0056F364 /* CardProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921EC454231FC1FB0056F364 /* CardProfil.swift */; };
 		922EA8CD22BCB61500D34AEB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922EA8CC22BCB61500D34AEB /* Color.swift */; };
@@ -60,6 +61,7 @@
 		1DBA0038A77631BAF61B8206 /* Pods-Volt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Volt.debug.xcconfig"; path = "Target Support Files/Pods-Volt/Pods-Volt.debug.xcconfig"; sourceTree = "<group>"; };
 		338CC198A3E0D09777D5EE8F /* Pods-VoltTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltTests.debug.xcconfig"; path = "Target Support Files/Pods-VoltTests/Pods-VoltTests.debug.xcconfig"; sourceTree = "<group>"; };
 		46B6099F4D5590737390E161 /* Pods-VoltTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltTests.release.xcconfig"; path = "Target Support Files/Pods-VoltTests/Pods-VoltTests.release.xcconfig"; sourceTree = "<group>"; };
+		9203121B23269112004C4B06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		921EC452231FC1DE0056F364 /* CardProfil.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardProfil.xib; sourceTree = "<group>"; };
 		921EC454231FC1FB0056F364 /* CardProfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProfil.swift; sourceTree = "<group>"; };
 		922EA8CC22BCB61500D34AEB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				92C4DE0022BBCF6A00F75CF4 /* View */,
 				92C4DDFF22BBCF6500F75CF4 /* Model */,
 				92C4DDDC22BBCF5600F75CF4 /* AppDelegate.swift */,
+				9203121B23269112004C4B06 /* GoogleService-Info.plist */,
 				92C4DDEB22BBCF5700F75CF4 /* Info.plist */,
 			);
 			path = Volt;
@@ -338,6 +341,7 @@
 				92C4DDE722BBCF5700F75CF4 /* Assets.xcassets in Resources */,
 				925431242320F53400C98E9B /* OverlayCard.xib in Resources */,
 				922EA8E422BCDF4900D34AEB /* ProximaNova-Semibold.otf in Resources */,
+				9203121C2326911A004C4B06 /* GoogleService-Info.plist in Resources */,
 				92C4DDE222BBCF5600F75CF4 /* Main.storyboard in Resources */,
 				92EA51892312C37E004E6B35 /* ProximaNova Regular.otf in Resources */,
 			);

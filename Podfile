@@ -8,7 +8,8 @@ target 'Volt' do
   
   use_frameworks!
   pod 'Koloda'
-  pod 'FlexLayout'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
   # Pods for Volt
   target 'VoltTests' do
