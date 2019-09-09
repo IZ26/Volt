@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>524935224838-5ob37g1cd2icra3422i1uaj64340j7h3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.524935224838-5ob37g1cd2icra3422i1uaj64340j7h3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA8RNzmGS_vglQhF46ydYy6xezyOO4MhKU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>524935224838</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.IlanZerdoun.Volt</string>
+	<key>PROJECT_ID</key>
+	<string>volt-bd06b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>volt-bd06b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:524935224838:ios:b8f543d6463859d2b9ad87</string>
+	<key>DATABASE_URL</key>
+	<string>https://volt-bd06b.firebaseio.com</string>
+</dict>
+</plist>
