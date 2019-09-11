@@ -12,6 +12,7 @@ class CardProfil: UIView {
     
     
     @IBOutlet var cardProfil: UIView!
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var blurredEffect: UIVisualEffectView!
     @IBOutlet weak var profilImage: UIImageView!
     @IBOutlet weak var profilCompetenceBg: UIView!
@@ -61,7 +62,9 @@ class CardProfil: UIView {
     }
     
     private func setCardComponent(){
-        cardProfil.backgroundColor = UIColor(patternImage: UIImage(named: "avatar")!)
+        backgroundImage.layer.cornerRadius = 15
+        backgroundImage.contentMode = .scaleAspectFill
+        
         cardProfil.frame = self.bounds
         cardProfil.layer.cornerRadius = 15
         cardProfil.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -84,7 +87,6 @@ class CardProfil: UIView {
         blurredEffect.layer.cornerRadius = 15
         blurredEffect.clipsToBounds = true
         
-        profilImage.image = UIImage(named: "avatar")
         profilImage.contentMode = .scaleAspectFill
         profilImage.layer.masksToBounds = false
         profilImage.layer.cornerRadius = profilImage.frame.height/2

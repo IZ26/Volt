@@ -19,17 +19,22 @@ class ChatListVC: UIViewController,  UITableViewDataSource, UITableViewDelegate 
         }
     }
     
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
         setNavBar()
         setStyle()
     }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 15
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -38,10 +43,10 @@ class ChatListVC: UIViewController,  UITableViewDataSource, UITableViewDelegate 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "chatCell", for: indexPath ) as! CustomCell
-
+        
         cell.name.text = "\(user.firstName) \(user.lastName)"
         cell.lastMessage.text = "Salut! Soirée kiwi?"
-        cell.profilImage.image = UIImage(named: user.image)
+        cell.profilImage.image = UIImage(named: "avatar\(indexPath.row + 20)")
         
         return cell
     }

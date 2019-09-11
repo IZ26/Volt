@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardProfil" customModule="Volt" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundImage" destination="wnc-GB-ltg" id="BLS-5N-kBt"/>
                 <outlet property="backhandContainer" destination="nBS-96-FgN" id="pM4-Qu-JvV"/>
                 <outlet property="backhandTitle" destination="2ht-Wo-hpf" id="ji8-Pc-QRy"/>
                 <outlet property="backhandValue" destination="lJf-Rb-lTm" id="tFf-da-Y6u"/>
@@ -45,6 +46,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wnc-GB-ltg">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </imageView>
                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Re-dD-8vI">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ute-zo-cAM">
@@ -332,10 +336,14 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wnc-GB-ltg" secondAttribute="trailing" id="83t-Po-NUT"/>
+                <constraint firstItem="wnc-GB-ltg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9hp-oZ-nmf"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1Re-dD-8vI" secondAttribute="trailing" id="Ejs-Zm-sTT"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1Re-dD-8vI" secondAttribute="bottom" id="MRO-P7-0Uz"/>
+                <constraint firstItem="wnc-GB-ltg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="RVr-Ih-qhJ"/>
                 <constraint firstItem="1Re-dD-8vI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Thd-uU-Iiv"/>
                 <constraint firstItem="1Re-dD-8vI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sVZ-op-nBi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wnc-GB-ltg" secondAttribute="bottom" id="tWW-kt-eKQ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="57.971014492753625" y="35.491071428571423"/>

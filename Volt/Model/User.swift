@@ -9,23 +9,23 @@
 import Foundation
 
 struct User{
-    var image = String()
-    var username = String()
-    var firstName = String()
-    var lastName = String()
-    var location = String()
-    var mail = String()
-    var city = String()
-    var age = Int()
-    var cardValue = Int()
-    var hand = String()
-    var sport = String()
-    var matchPlayed = String()
-    var speed = Int()
-    var endurance = Int()
-    var serve = Int()
-    var forehand = Int()
-    var backhand = Int()
+    var image = "avatar"
+    var username = "ryan75"
+    var firstName = "Ryan"
+    var lastName = "Reynolds"
+    var location = "Paris"
+    var mail = "ryan@gmail.com"
+    var city = "Paris"
+    var age = 26
+    var cardValue = 68
+    var hand = "Droitier"
+    var sport = "Tennis"
+    var matchPlayed = "27 parties"
+    var speed = 78
+    var endurance = 53
+    var serve = 45
+    var forehand = 38
+    var backhand = 73
     
     
     public func calcCardValue(speedValue: Int, enduranceValue: Int, serveValue: Int, forehandValue: Int, backhandValue: Int) -> Int {

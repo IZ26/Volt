@@ -26,8 +26,14 @@ class HomeVC: UIViewController, KolodaViewDelegate, KolodaViewDataSource {
     
     var ref: DatabaseReference!
     
+    let loader = UIActivityIndicatorView(style: .gray)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.addSubview(loader)
+        loader.center = CGPoint(x: self.view.frame.size.width*0.5, y: self.view.frame.size.height*0.5)
+        loader.startAnimating()
         
         setStyle()
         
@@ -77,6 +83,8 @@ class HomeVC: UIViewController, KolodaViewDelegate, KolodaViewDataSource {
                 }
             }
             DispatchQueue.main.async {
+                self.loader.stopAnimating()
+                self.loader.removeFromSuperview()
                 self.kolodaView.reloadData()
             }
         })
@@ -94,6 +102,7 @@ class HomeVC: UIViewController, KolodaViewDelegate, KolodaViewDataSource {
         let view = CardProfil()
         
         let card = users[index]
+        let image = UIImage(named: "avatar\(index + 1)")
         
         view.profilName.text = "\(card.firstName) \(card.lastName)"
         view.profilLocation.text = "\(card.city)"
@@ -106,6 +115,8 @@ class HomeVC: UIViewController, KolodaViewDelegate, KolodaViewDataSource {
         view.profilSport.text = "\(card.sport.uppercased())"
         view.profilAge.text = "\(card.age) ans"
         view.profilHand.text = "\(card.hand.uppercased())"
+        view.profilImage.image = image
+        view.backgroundImage.image = image
         
         let gamePlayed = Int(card.matchPlayed)
         

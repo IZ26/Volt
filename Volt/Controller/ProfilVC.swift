@@ -69,7 +69,7 @@ class ProfilVC: UIViewController, UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "gamePlayedCell", for: indexPath ) as! CollectionCell
         
-        cell.profilCellImage.image = UIImage(named: user.image)
+        cell.profilCellImage.image = UIImage(named: "avatar\(indexPath.row + 15)")
         cell.profilCellName.text = "\(user.firstName) \(user.lastName)"
         cell.profilCellDate.text = "le 23/01/2109"
         
@@ -105,7 +105,7 @@ extension ProfilVC{
         
         profilValue.textColor = UIColor.declineBlack
         profilValue.font = UIFont.cardValue
-        profilValue.text = "100"
+        profilValue.text = "\(user.cardValue)"
         
         profilHand.textColor = UIColor.declineBlack
         profilHand.font = UIFont.textExtraSmall
