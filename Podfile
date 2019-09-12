@@ -11,6 +11,7 @@ target 'Volt' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
 
   # Pods for Volt
   target 'VoltTests' do

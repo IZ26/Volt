@@ -17,7 +17,6 @@ class InfoStepTwoVC: UIViewController {
     @IBOutlet weak var stepTwo: UIView!
     @IBOutlet weak var stepThree: UIView!
     @IBOutlet weak var infoSport: TextField!
-    @IBOutlet weak var infoFrequency: TextField!
     @IBOutlet weak var infoHandTitle: UILabel!
     @IBOutlet weak var rightHandButton: UIButton!
     @IBOutlet weak var rightHandTitle: UILabel!
@@ -49,7 +48,7 @@ extension InfoStepTwoVC{
         let attrString = NSMutableAttributedString(string: infoStepsTitle.text!)
         attrString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
         let attributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.declineBlack,
+            NSAttributedString.Key.foregroundColor: UIColor.declineBlackOpacity,
             NSAttributedString.Key.font : UIFont.textSmall
         ]
         
@@ -69,9 +68,6 @@ extension InfoStepTwoVC{
         
         infoSport.attributedPlaceholder = NSAttributedString(string: "Sport", attributes:attributes)
         infoSport.style = .bordered
-        
-        infoFrequency.attributedPlaceholder = NSAttributedString(string: "Fréquence", attributes:attributes)
-        infoFrequency.style = .bordered
         
         infoHandTitle.text = "Votre main?"
         infoHandTitle.textColor = UIColor.declineBlack

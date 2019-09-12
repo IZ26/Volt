@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-class RegisterVC: UIViewController {
+class RegisterVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var registerTitle: UILabel!
     @IBOutlet weak var registerUsername: TextField!
@@ -35,6 +36,11 @@ class RegisterVC: UIViewController {
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
+        self.registerUsername.delegate = self
+        self.registerPassword.delegate = self
+        self.registerMail.delegate = self
+        self.registerConfirmPassword.delegate = self
 
         setStyle()
     }
@@ -42,6 +48,26 @@ class RegisterVC: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+
+    @IBAction func createUser(_ sender: Any) {
+        Auth.auth().createUser(withEmail: registerMail.text!, password: registerPassword.text!) { authResult, error in
+            if(error != nil) {
+                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+            else {
+                let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "infoStepOne") as! InfoStepOneVC
+                self.present(secondVC, animated:true, completion:nil)
+            }
+        }
+    }
+    
+    internal func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
+    }
+    
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
@@ -53,7 +79,7 @@ extension RegisterVC{
     func setStyle(){
         
         let attributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.declineBlack,
+            NSAttributedString.Key.foregroundColor: UIColor.declineBlackOpacity,
             NSAttributedString.Key.font : UIFont.textSmall
         ]
         

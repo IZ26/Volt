@@ -44,7 +44,7 @@ extension InfoStepOneVC {
         let attrString = NSMutableAttributedString(string: infoStepsTitle.text!)
         attrString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
         let attributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.declineBlack,
+            NSAttributedString.Key.foregroundColor: UIColor.declineBlackOpacity,
             NSAttributedString.Key.font : UIFont.textSmall
         ]
         

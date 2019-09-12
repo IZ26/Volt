@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginVC: UIViewController, UITextFieldDelegate {
     
@@ -24,11 +25,35 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         view.addGestureRecognizer(tap)
 
         setStyle()
+        
+        self.loginUsername.delegate = self
+        self.loginPassword.delegate = self
+    }
+    
+    internal func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    @IBAction func signIn(_ sender: Any) {
+        Auth.auth().signIn(withEmail: loginUsername.text!, password: loginPassword.text!) { [weak self] user, error in
+            
+            if(error != nil) {
+                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+                self!.present(alert, animated: true, completion: nil)
+            }
+            else {
+                let secondVC = self!.storyboard?.instantiateViewController(withIdentifier: "infoStepOne") as! InfoStepOneVC
+                self!.present(secondVC, animated:true, completion:nil)
+            }
+        }
+    }
+    
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
@@ -40,7 +65,7 @@ extension LoginVC{
     func setStyle(){
         
         let attributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.declineBlack,
+            NSAttributedString.Key.foregroundColor: UIColor.declineBlackOpacity,
             NSAttributedString.Key.font : UIFont.textSmall
         ]
         
@@ -48,7 +73,7 @@ extension LoginVC{
         loginTitle.font = UIFont.title
         loginTitle.text = "Connexion"
         
-        loginUsername.attributedPlaceholder = NSAttributedString(string: "Username", attributes:attributes)
+        loginUsername.attributedPlaceholder = NSAttributedString(string: "Mail", attributes:attributes)
         loginUsername.style = .standard
         
         loginPassword.attributedPlaceholder = NSAttributedString(string: "Mot de passe", attributes:attributes)
