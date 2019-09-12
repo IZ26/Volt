@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="37M-I5-8tI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fgz-2i-Cv1">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -40,7 +40,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connexion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51M-bV-JqA">
-                                        <rect key="frame" x="115" y="233.33333333333331" width="145" height="30"/>
+                                        <rect key="frame" x="115.33333333333333" y="233.33333333333331" width="144.66666666666669" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="rMx-GF-ts9"/>
                                         </constraints>
@@ -1135,7 +1135,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eWE-dC-7si">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eWE-dC-7si" customClass="TextField" customModule="Volt" customModuleProvider="target">
                                                 <rect key="frame" x="56.666666666666671" y="0.0" width="96.000000000000014" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="O86-L4-ST7"/>
@@ -1155,7 +1155,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5VG-n7-UY7">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5VG-n7-UY7" customClass="TextField" customModule="Volt" customModuleProvider="target">
                                                 <rect key="frame" x="56.666666666666664" y="0.0" width="95.666666666666686" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="UCE-vb-2On"/>
@@ -1181,21 +1181,53 @@
                                         <rect key="frame" x="0.0" y="40" width="375" height="55"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EcT-uU-0C6">
-                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="itemSize" width="121" height="35"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qk5-qU-O3h">
-                                                <rect key="frame" x="0.0" y="2.6666666666666665" width="50" height="50"/>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="competenceCell" id="qk5-qU-O3h" customClass="CompetenceCell" customModule="Volt" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="10" width="121" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="121" height="35"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAg-BS-hKy" customClass="CompetenceComponent" customModule="Volt" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="121" height="35"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2i-zF-3Ms">
+                                                                    <rect key="frame" x="39.666666666666664" y="7" width="41.999999999999993" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="n2i-zF-3Ms" firstAttribute="centerY" secondItem="bAg-BS-hKy" secondAttribute="centerY" id="00t-53-hFS"/>
+                                                                <constraint firstItem="n2i-zF-3Ms" firstAttribute="centerX" secondItem="bAg-BS-hKy" secondAttribute="centerX" id="aHc-6b-Yfu"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
                                                 </view>
+                                                <constraints>
+                                                    <constraint firstItem="bAg-BS-hKy" firstAttribute="leading" secondItem="qk5-qU-O3h" secondAttribute="leading" id="98n-tj-Hbf"/>
+                                                    <constraint firstItem="bAg-BS-hKy" firstAttribute="top" secondItem="qk5-qU-O3h" secondAttribute="top" id="h6F-3F-P1Z"/>
+                                                    <constraint firstAttribute="bottom" secondItem="bAg-BS-hKy" secondAttribute="bottom" id="nts-xc-by8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bAg-BS-hKy" secondAttribute="trailing" id="p0S-Oe-wRA"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="competenceContainer" destination="bAg-BS-hKy" id="IeP-KV-uGD"/>
+                                                    <outlet property="competenceTitle" destination="n2i-zF-3Ms" id="5Xh-Qr-nvx"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="0In-XT-mvW" id="oEf-dq-fPH"/>
+                                            <outlet property="delegate" destination="0In-XT-mvW" id="Mj5-cd-9YJ"/>
+                                        </connections>
                                     </collectionView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1204,6 +1236,7 @@
                                     <constraint firstItem="jAM-7b-tVb" firstAttribute="leading" secondItem="LoI-J6-rdG" secondAttribute="leading" constant="20" id="FTV-vl-NgQ"/>
                                     <constraint firstAttribute="bottom" secondItem="iRv-X7-oDC" secondAttribute="bottom" constant="5" id="JRt-rG-lem"/>
                                     <constraint firstItem="iRv-X7-oDC" firstAttribute="leading" secondItem="LoI-J6-rdG" secondAttribute="leading" id="PYm-Cr-9dN"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jAM-7b-tVb" secondAttribute="trailing" constant="20" symbolic="YES" id="YO4-ix-8Mn"/>
                                     <constraint firstAttribute="trailing" secondItem="iRv-X7-oDC" secondAttribute="trailing" id="hoo-5A-01g"/>
                                     <constraint firstItem="jAM-7b-tVb" firstAttribute="top" secondItem="LoI-J6-rdG" secondAttribute="top" constant="10" id="nPd-My-Apk"/>
                                     <constraint firstItem="iRv-X7-oDC" firstAttribute="top" secondItem="LoI-J6-rdG" secondAttribute="top" constant="40" id="sHv-9x-fl1"/>
@@ -1215,7 +1248,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="92Q-jF-9tX">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="92Q-jF-9tX" customClass="TextField" customModule="Volt" customModuleProvider="target">
                                 <rect key="frame" x="20" y="324.66666666666669" width="335" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="EAX-Sd-2Ga"/>
@@ -1233,7 +1266,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eju-Dt-OaO">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eju-Dt-OaO" customClass="TextField" customModule="Volt" customModuleProvider="target">
                                         <rect key="frame" x="20" y="50.333333333333314" width="335" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="F8l-lt-ANb"/>
@@ -1250,10 +1283,11 @@
                                     <constraint firstAttribute="height" constant="100" id="aY3-SO-EhO"/>
                                     <constraint firstItem="8cG-7b-bqA" firstAttribute="leading" secondItem="tGt-lF-463" secondAttribute="leading" constant="20" id="eQB-w6-BMH"/>
                                     <constraint firstAttribute="trailing" secondItem="Eju-Dt-OaO" secondAttribute="trailing" constant="20" id="k6B-Qs-JPH"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8cG-7b-bqA" secondAttribute="trailing" constant="20" symbolic="YES" id="x5v-RC-uDt"/>
                                     <constraint firstItem="Eju-Dt-OaO" firstAttribute="leading" secondItem="tGt-lF-463" secondAttribute="leading" constant="20" id="xmf-cN-gr5"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awg-tn-bF1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awg-tn-bF1" customClass="Button" customModule="Volt" customModuleProvider="target">
                                 <rect key="frame" x="40" y="718" width="295" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dfo-aY-Oai"/>
@@ -1269,10 +1303,12 @@
                             <constraint firstItem="LoI-J6-rdG" firstAttribute="top" secondItem="S9P-kT-JZG" secondAttribute="bottom" constant="20" id="Ajk-X3-gjv"/>
                             <constraint firstItem="S9P-kT-JZG" firstAttribute="leading" secondItem="7Fe-95-Nq6" secondAttribute="leading" constant="20" id="Db8-y3-1mP"/>
                             <constraint firstItem="92Q-jF-9tX" firstAttribute="leading" secondItem="7Fe-95-Nq6" secondAttribute="leading" constant="20" id="HuE-gU-gn0"/>
+                            <constraint firstItem="7Fe-95-Nq6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IYh-0e-HPO" secondAttribute="trailing" symbolic="YES" id="JH2-PX-Rbj"/>
                             <constraint firstItem="S9P-kT-JZG" firstAttribute="top" secondItem="IYh-0e-HPO" secondAttribute="bottom" constant="15" id="NlB-6y-hwf"/>
                             <constraint firstItem="7Fe-95-Nq6" firstAttribute="trailing" secondItem="LoI-J6-rdG" secondAttribute="trailing" id="Oh3-7Q-SRM"/>
                             <constraint firstItem="KWG-mD-6bl" firstAttribute="leading" secondItem="7Fe-95-Nq6" secondAttribute="leading" constant="20" id="SCu-Al-Pn0"/>
                             <constraint firstItem="7Fe-95-Nq6" firstAttribute="trailing" secondItem="92Q-jF-9tX" secondAttribute="trailing" constant="20" id="W8g-EI-js5"/>
+                            <constraint firstItem="7Fe-95-Nq6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KWG-mD-6bl" secondAttribute="trailing" symbolic="YES" id="aBd-hg-8dy"/>
                             <constraint firstItem="LoI-J6-rdG" firstAttribute="leading" secondItem="7Fe-95-Nq6" secondAttribute="leading" id="cRr-H8-k0u"/>
                             <constraint firstItem="7Fe-95-Nq6" firstAttribute="trailing" secondItem="awg-tn-bF1" secondAttribute="trailing" constant="40" id="hFz-LF-DtM"/>
                             <constraint firstItem="awg-tn-bF1" firstAttribute="leading" secondItem="7Fe-95-Nq6" secondAttribute="leading" constant="40" id="hwl-XW-lO9"/>
@@ -1285,6 +1321,22 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Fe-95-Nq6"/>
                     </view>
+                    <connections>
+                        <outlet property="applyFilter" destination="awg-tn-bF1" id="Ru9-V5-vlN"/>
+                        <outlet property="collectionView" destination="iRv-X7-oDC" id="rw5-4V-w6x"/>
+                        <outlet property="competenceContainer" destination="LoI-J6-rdG" id="ESB-gS-ref"/>
+                        <outlet property="competenceTitle" destination="jAM-7b-tVb" id="Bwk-Uh-8Xj"/>
+                        <outlet property="locationContainer" destination="tGt-lF-463" id="n06-kb-KBT"/>
+                        <outlet property="locationInput" destination="Eju-Dt-OaO" id="imW-5N-qa1"/>
+                        <outlet property="locationTitle" destination="8cG-7b-bqA" id="Yq9-j3-k2U"/>
+                        <outlet property="maxValueInput" destination="5VG-n7-UY7" id="3pV-sk-VQV"/>
+                        <outlet property="maxValueTitle" destination="Dmm-Op-NQk" id="PcN-TV-9Jd"/>
+                        <outlet property="minValueInput" destination="eWE-dC-7si" id="bYu-ny-iBf"/>
+                        <outlet property="minValueTitle" destination="492-8U-moM" id="scE-Jt-yvE"/>
+                        <outlet property="sportInput" destination="92Q-jF-9tX" id="Gbt-Vl-f4Q"/>
+                        <outlet property="sportTitle" destination="KWG-mD-6bl" id="rnQ-sf-8Gm"/>
+                        <outlet property="valueTitle" destination="IYh-0e-HPO" id="AGF-pv-Xv2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IFZ-vM-98v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2148,6 +2200,6 @@
         <image name="swipeRight" width="23.666666030883789" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9gU-Ld-itt"/>
+        <segue reference="wHD-uq-fS4"/>
     </inferredMetricsTieBreakers>
 </document>
